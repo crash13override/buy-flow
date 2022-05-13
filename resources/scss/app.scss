@@ -1,0 +1,58 @@
+$breakpoints: (
+    'xs-phone': 320px,
+    'phone': 480px,
+    'tablet': 768px,
+    'desktop': 1024px,
+    'widescreen': 1280px,
+    'largescreen': 1500px
+);
+
+// keywords
+$media-expressions: (
+    'screen': 'screen',
+    'print': 'print',
+    'handheld': 'handheld',
+    'landscape': '(orientation: landscape)',
+    'portrait': '(orientation: portrait)',
+    'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+    'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// ligatured operators ≥ ≤
+
+
+@import 'base/functions';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/helpers';
+
+@import 'vendors/fonts';
+@import 'vendors/include-media';
+@import 'vendors/normalize';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/forms';
+
+@import 'vendors/grid';
+@import 'vendors/animation';
+@import 'vendors/glider';
+@import 'vendors/icomoon';
+
+// @import 'layouts/mixed';
+@import 'layouts/header';
+@import 'layouts/common';
+@import 'layouts/footer';
+@import 'layouts/scene';
+@import 'layouts/glider';
+@import 'layouts/animation';
+@import 'layouts/mixed';
+@import 'layouts/home';
+@import 'layouts/builder';
+@import 'layouts/flovatar-details';
+@import 'layouts/marketplace';
+@import 'layouts/pagination';
+@import 'layouts/modal';
+@import 'layouts/filter-panel';
+@import 'layouts/tab-section';
+@import 'layouts/meme-maker';

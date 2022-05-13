@@ -1,0 +1,136 @@
+// ---------------------------------------------------------===
+// scene styles
+// ---------------------------------------------------------===
+
+
+.hero-container {
+  padding-top: 56.25%;
+  overflow: hidden;
+  width: 100%;
+  position: relative
+}
+
+.hero-container--bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, #da00d3 0%, #d700d1 1%, #a800b6 14.000000000000002%, #7f009e 27%, #5e018b 40%, #44017c 54%, #320171 68%, #27016b 83%, #230169 100%);
+}
+
+#hero-scene-home {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-container-showroom {
+  position: relative;
+  min-height: 100vh;
+  height: 1020px;
+}
+
+.hero-container-showroom .hero-container--bg {
+  background: rgb(24, 14, 56);
+}
+
+#hero-scene-showroom {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.showroom-slider--wrapper {
+  /*transform: translateY(45%);*/
+  height: 100%;
+}
+
+#showroom-slider {
+  height: 100%;
+  /*overflow-y: visible;*/
+}
+
+#showroom-slider .glider-track {
+  height: 100%;
+}
+
+.showroom-slider .slide {
+  display: flex;
+  height: 100%;
+  /*align-items: flex-end;*/
+  /*transform: translate3d(0, -50%, 0);*/
+}
+
+#showroom-slider .slide img,
+#showroom-slider .slide svg {
+  height: auto;
+  transform-origin: 50% 100%;
+  /*opacity: 0;*/
+  /*transform: scale(0.1);*/
+  /*transition: all 0.2s ease-out;*/
+}
+#showroom-slider .slide.visible img,
+#showroom-slider .slide.visible svg {
+  opacity: 1;
+}
+#showroom-slider .slide.left-2 img,
+#showroom-slider .slide.left-2 svg {
+  transform: scale(1) translate3d(0, 20px, 0);
+}
+
+#showroom-slider .slide.left-1 img,
+#showroom-slider .slide.left-1 svg {
+  transform: scale(1.3) translate3d(0, 5px, 0);
+}
+
+#showroom-slider .slide.center img,
+#showroom-slider .slide.center svg {
+  transform: scale(1.8) translate3d(0, 0, 0);
+}
+
+#showroom-slider .slide.right-1 img,
+#showroom-slider .slide.right-1 svg {
+  transform: scale(1.5) translate3d(0, 30px, 0);
+}
+
+#showroom-slider .slide.right-2 img,
+#showroom-slider .slide.right-2 svg {
+  transform: scale(1) translate3d(0, 160px, 0);
+}
+
+.flovatar-slide {
+  width: 300px;
+  flex: 0 0 300px;
+}
+
+.scene-container-disco {
+  margin: 0;
+  position: relative;
+  padding-top: 54.4%;
+}
+
+#scene-disco-room {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#flovatest-scene {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

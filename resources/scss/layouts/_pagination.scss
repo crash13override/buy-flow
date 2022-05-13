@@ -1,0 +1,85 @@
+// ---------------------------------------------------------===
+// pagination styles
+// ---------------------------------------------------------===
+
+.pagination-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 35px;
+  font-size: 16px;
+
+  @include media('<tablet') {
+    padding-top: 20px;
+  }
+
+  .col {
+    width: 180px;
+
+    @include media('<tablet') {
+      width: auto;
+    }
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+  }
+
+  .btn-col {
+    @include media('<tablet') {
+      order: -2;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .btn-outline {
+      @include media('<tablet') {
+        width: 100%;
+      }
+    }
+  }
+
+  .select-outline {
+    margin-right: 8px;
+  }
+}
+
+.pagination {
+  @extend %listreset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 -4px;
+
+  .btn-outline {
+    min-width: 0;
+    width: 32px;
+    padding: 0;
+  }
+
+  input[type="text"],
+  input[type="number"]{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  li {
+    padding: 0 4px;
+    min-width: 24px;
+    text-align: center;
+  }
+}

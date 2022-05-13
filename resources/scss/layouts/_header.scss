@@ -1,0 +1,291 @@
+// ---------------------------------------------------------===
+// Header styles
+// ---------------------------------------------------------===
+
+#main-nav {
+  position: relative;
+  z-index: 9;
+  padding: 25px 0;
+
+  .header-transparent & {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: none;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 220px;
+    transform: translateY(-8px);
+
+    @include media('<widescreen') {
+      width: 190px;
+    }
+    @include media('<desktop') {
+      width: 170px;
+    }
+    @include media('<tablet') {
+      width: 140px;
+    }
+  }
+
+  .nav-opener {
+    color: color(yellow, 1);
+    font-size: 18px;
+    line-height: 1;
+
+    @include media('>=desktop') {
+      display: none;
+    }
+
+    .nav-active & {
+      .icon-menu:before {
+        content: "\e90e";
+      }
+    }
+  }
+
+  .nav {
+    @extend %listreset;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -28px;
+
+    @include media('<widescreen') {
+      margin: 0 -16px;
+    }
+
+    @include media('<desktop') {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      display: block;
+      background: #fff;
+      padding: 30px 0;
+      margin: 10px 0 0;
+      opacity: 0;
+      pointer-events: none;
+      @include animate(opacity margin-top);
+
+      .nav-active & {
+        opacity: 1;
+        pointer-events: auto;
+        margin-top: 0;
+      }
+    }
+
+    > li {
+      padding: 0 28px;
+
+      @include media('<widescreen') {
+        padding: 0 16px;
+      }
+
+      @include media('<desktop') {
+        padding: 0;
+        margin: 0 0 5px;
+      }
+
+      &.active {
+        > a:not(.btn) {
+          color: #fff;
+
+          @include media('<desktop') {
+            background: #EB3CF2;
+          }
+        }
+      }
+
+      > a:not(.btn){
+        font-family: $staatliches;
+        font-size: 24px;
+        line-height: 1.25;
+        color: color(yellow, 1);
+
+        @include media('<desktop') {
+          padding: 9px 20px;
+          display: block;
+          color: #EB3CF2;
+        }
+
+        &:hover {
+          color: #fff;
+
+          @include media('<desktop') {
+            background: #EB3CF2;
+          }
+        }
+      }
+    }
+
+    .btn {
+      height: 44px;
+
+      @include media('<desktop') {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+
+      .inner {
+        color: #EB3CF2;
+        padding: 0 19px;
+      }
+    }
+  }
+
+  .nav-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+}
+
+.user-menu {
+  margin-left: 40px;
+  position: relative;
+
+  @include media('<widescreen') {
+    margin-left: 31px;
+  }
+
+  @include media('<tablet') {
+    margin-left: 20px;
+  }
+
+  &:hover {
+    .menu-drop {
+      opacity: 1;
+      pointer-events: auto;
+      margin-top: 20px;
+    }
+  }
+
+  .menu-opener {
+    color: color(yellow, 1);
+    display: block;
+    line-height: 1px;
+
+    > i {
+      font-size: 38px;
+      line-height: 1;
+
+      @include media('<desktop') {
+        font-size: 31px;
+      }
+    }
+
+  }
+
+  .menu-drop {
+    background: #fff;
+    position: absolute;
+    width: 273px;
+    right: 0;
+    top: 100%;
+    margin-top: 10px;
+    opacity: 0;
+    pointer-events: none;
+    @include animate(opacity margin-top);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: rgba(0, 0, 0, 0.2);
+      transform: translate(-12px, 12px);
+      pointer-events: none;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 30px;
+      top: -30px;
+      left: 0;
+      right: 0;
+    }
+
+      .user-info a {
+          color: #A21AA8;
+      }
+
+    dl {
+      padding: 15px 20px;
+      background: #fff;
+      color: #A21AA8;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+      line-height: 1.428;
+
+      dt {
+        width: 65px;
+      }
+
+      dd {
+        width: calc(100% - 65px);
+        @extend .ellipsis;
+        margin: 0;
+      }
+    }
+  }
+
+  .sub-nav {
+    @extend %listreset;
+    font-family: $staatliches;
+    font-size: 24px;
+    line-height: 1.25;
+    color: color(yellow, 1);
+    background: #fff;
+
+    li {
+      a {
+        padding: 9px 20px;
+        display: block;
+        color: #EB3CF2;
+
+        &:hover {
+          color: #fff;
+          background: #EB3CF2;
+        }
+      }
+
+      .link-logout {
+        background: #EDEDED;
+        position: relative;
+
+        &:hover {
+          color: #fff;
+          background: #EB3CF2;
+        }
+
+        .icon-arrow-circle {
+          font-size: 29px;
+          right: 14px;
+          @include box-align(vc);
+        }
+      }
+    }
+  }
+}
+
+#nav{
+  // display: none;
+}

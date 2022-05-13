@@ -1,0 +1,356 @@
+// ---------------------------------------------------------===
+// filter styles
+// ---------------------------------------------------------===
+
+.filter-panel-wrap {
+  margin-bottom: 40px;
+}
+
+.filter-panel {
+  display: flex;
+  align-items: center;
+  padding: 16px 18px 0 18px;
+  background: #343b5a;
+  border-radius: 10px;
+  font-family: $staatliches;
+
+  @include media("<1200px") {
+    flex-wrap: wrap;
+  }
+
+  &.filter-drop {
+    margin-top: -14px;
+    border-radius: 0 0 10px 10px;
+    padding-top: 34px;
+    padding-right: 74px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 19px;
+      right: 19px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    &:after {
+      background: rgba(0, 0, 0, 0.3);
+      top: 12px;
+    }
+
+    .select-wrap {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  }
+
+  .filter-btn {
+    width: 108px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .filter-no {
+      position: absolute;
+      top: -12px;
+      right: -15px;
+      border-radius: 50%;
+      border: 2px solid #000000;
+      font-size: 18px;
+      color: #000;
+      @include size(31px);
+      background: #a2a9cb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .btn {
+      width: 100%;
+    }
+
+    .icon-funel {
+      padding-right: 10px;
+    }
+  }
+
+  .btn-cross {
+    width: 45px;
+    font-size: 16px;
+    position: absolute;
+    top: 36px;
+    right: 27px;
+  }
+
+  .select-wrap {
+    width: 267px;
+    display: flex;
+    align-items: center;
+    background-color: #1a1e2d;
+    border-radius: 6px;
+    margin-bottom: 20px;
+
+    &.select-sort {
+      @include media("<1200px") {
+        flex: 1;
+      }
+
+      @include media("<tablet") {
+        flex: initial;
+        width: 100%;
+        order: 9;
+      }
+    }
+
+    &.lg {
+      flex: 1;
+
+      @include media("<1400px") {
+        min-width: 252px;
+      }
+    }
+
+    &.md {
+      width: 215px;
+
+      @include media("<1400px") {
+        width: 200px;
+      }
+    }
+
+    &.sm {
+      width: 156px;
+
+      strong {
+        padding-left: 10px;
+        font-weight: 400;
+
+        small {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .label {
+      border-right: 2px solid #343b5a;
+      width: 68px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 4px;
+      height: 100%;
+      margin-right: 2px;
+      font-size: 14px;
+      color: #6e7595;
+    }
+
+    select {
+      flex: 1;
+
+      option {
+        small {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .input-wrap {
+    flex: 1;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 12px;
+    height: 45px;
+
+    @include placeholder {
+      color: rgba(255,255,255,0.5);
+    }
+  }
+
+  .item-no {
+    width: 94px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1e2d;
+    border-radius: 6px;
+    height: 46px;
+    margin-left: 18px;
+    font-size: 22px;
+    margin-bottom: 20px;
+
+    @include media("<tablet") {
+      margin-left: 0;
+    }
+
+    small {
+      font-size: 14px;
+      padding-left: 4px;
+      margin-top: 5px;
+    }
+  }
+
+  .divider {
+    position: relative;
+    height: 57px;
+    width: 4px;
+    margin: -18px 18px 0;
+    background: rgba(255, 255, 255, 0.1);
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      background: rgba(0, 0, 0, 0.3);
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  .filter-tag-wrap {
+    background: #1a1e2d;
+    border-radius: 6px;
+    padding: 7px 10px 0 10px;
+    color: #000000;
+    margin-left: 19px;
+    margin-bottom: 20px;
+    flex: 1;
+
+    @include media("<1200px") {
+      order: 10;
+      width: 100%;
+      flex: initial;
+      margin-left: 0;
+    }
+      &.hide-filters{
+          visibility: hidden;
+          height: 0;
+          overflow: hidden;
+      }
+  }
+
+  .tag-list {
+    @extend %listreset;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 43px;
+
+    li {
+      padding-right: 7px;
+      margin-bottom: 7px;
+    }
+  }
+}
+
+.filter-tag {
+  font-size: 14px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 28px;
+  z-index: 1;
+  overflow: hidden;
+
+  &.legendary {
+    .inner-tag {
+      background: #eb3cf2;
+    }
+
+    .triangle {
+      background: #eb3cf2;
+    }
+  }
+
+  &.epic {
+    .inner-tag {
+      background: #FFEE50;
+    }
+
+    .triangle {
+      background: #FFEE50;
+    }
+  }
+
+  &.rare {
+    .inner-tag {
+      background: #23EDFC;
+    }
+
+    .triangle {
+      background: #23EDFC;
+    }
+  }
+
+  .icon-cross02 {
+    color: #000000;
+    font-size: 10px;
+    @include box-align(vc);
+    right: 15px;
+  }
+
+  .inner-tag {
+    background: #a1a9cb;
+    border-radius: 4px 9px 9px 4px;
+    padding: 10px 10px 8px;
+  }
+
+  span,
+  strong {
+    display: inline-block;
+    padding: 0 3px;
+  }
+
+  span {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .triangle {
+    position: absolute;
+    background-color: #a1a9cb;
+    text-align: left;
+    display: inline-block;
+    transform: rotate(31deg) skewX(-30deg) scale(1, 0.866);
+    left: 100%;
+    z-index: -1;
+    border-top-right-radius: 30%;
+    margin-left: -31px;
+    margin-top: 1px;
+
+    &,
+    &:before,
+    &:after {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      background-color: inherit;
+    }
+
+    &:before {
+      transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+        translate(0, -50%);
+    }
+
+    &:after {
+      transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+    }
+  }
+}

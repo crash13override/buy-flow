@@ -1,0 +1,80 @@
+// ---------------------------------------------------------===
+// Footer styles
+// ---------------------------------------------------------===
+
+#footer {
+  display: table-footer-group;
+  height: 1%;
+  position: relative;
+  font-size: 18px;
+  background: linear-gradient(to bottom, rgba(168,32,173,1) 0%,rgba(212,40,211,1) 99%);
+  padding: 20px 0;
+
+  .container {
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .copyright {
+    display: block;
+    font-size: 0.9em;
+
+    @include media('<tablet') {
+      font-family: $staatliches;
+    }
+    
+    a {
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .hidden-xs {
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  @extend %listreset;
+  margin: 0 -10px;
+
+  @include media('<tablet') {
+    margin: 0 -5px;
+  }
+
+  li {
+    padding: 0 10px;
+
+    @include media('<tablet') {
+      padding: 0 5px;
+    }
+
+    a {
+      font-size: 30px;
+      color: white;
+
+      @include media('<tablet') {
+        font-size: 25px;
+      }
+
+      @include media('<375px') {
+        font-size: 22px;
+      }
+
+      &:hover {
+        color: color(yellow, 1);
+      }
+    }
+  }
+}
