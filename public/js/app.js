@@ -23778,6 +23778,8 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0__["default"].data('getStartedData', function
     curTab: 'flow',
     hasCrypto: null,
     cryptoWallet: null,
+    hasDapperWallet: null,
+    hasCompletedKyc: null,
     init: function init() {
       this.loadHashParams();
     },

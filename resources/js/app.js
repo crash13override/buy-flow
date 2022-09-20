@@ -42,6 +42,8 @@ Alpine.data('getStartedData', () => ({
     curTab: 'flow',
     hasCrypto: null,
     cryptoWallet: null,
+    hasDapperWallet: null,
+    hasCompletedKyc: null,
     init() {
         this.loadHashParams();
     },
