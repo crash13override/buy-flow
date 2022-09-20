@@ -716,7 +716,7 @@
                 </div>
             </div>
             <div class="timeline-heading">
-                <span class="no">1</span>
+                <span class="no">2</span>
                 <h2>WITHDRAW <span class="highlight-txt">USDC TOKEN</span> TO <span class="highlight-txt">BLOCTO WALLET</span></h2>
                 <div class="btn-wrap">
                     <a href="https://accounts.meetdapper.com/home" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="38">Dapper Wallet</a>
@@ -773,7 +773,7 @@
 
 
             <div class="timeline-heading">
-                <span class="no">2</span>
+                <span class="no">3</span>
                 <h2>Swap <span class="highlight-txt">USDC</span> TO <span class="highlight-txt">FLOW</span></h2>
             </div>
 
