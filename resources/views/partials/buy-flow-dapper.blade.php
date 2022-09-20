@@ -113,7 +113,7 @@
 
             <div class="timeline-heading">
                 <span class="no">2</span>
-                <h2>use blocto to teleport <span class="highlight-txt">WFLOW</span> TO <span class="highlight-txt">flow</span></h2>
+                <h2>Use blocto to teleport <span class="highlight-txt">WFLOW</span> TO <span class="highlight-txt">flow</span></h2>
                 <div class="btn-wrap">
                     <a href="https://swap.blocto.app/#/teleport?inputCurrency=0x5c147e74D63B1D31AA3Fd78Eb229B65161983B2b&outputCurrency=0x1654653399040a61" target="_blank" class="btn-o"><img src="/images/icon-bloctoswap.svg" alt="" width="29">Open BloctoSwap Teleport</a>
                 </div>
@@ -276,7 +276,7 @@
                 </div>
                 <div class="desc">
                     <div class="inner">
-                        <h3>Add Blocto address to the withdrawl list</h3>
+                        <h3>Add Blocto address to the withdrawal list</h3>
                         <p>Click <b>Add new withdrawl address</b> and then copy the address from the previous step along with a name and save it.
                         </p>
                     </div>
@@ -306,12 +306,15 @@
             </div>
             <div class="media-a alt sm">
                 <div class="img">
-                    <img src="/images/a-img31.png" alt="">
+                    <img src="/images/get-started-dapper/22-Check-Flow-Balance.png" alt="">
                 </div>
                 <div class="desc">
                     <div class="inner">
                         <h3>View your FLOW balance</h3>
-                        <p>After a few minutes (unless extra verification is needed) you can check your FLOW balance in your Blocto Wallet just by opening the user dropdown menu on the Flovatar website and you will see it underneath the wallet ID.</p>
+                        <p>After a few minutes (unless extra verification is needed) you can check your FLOW balance in your Dapper Wallet and make sure the process run smoothly.</p>
+                        <div class="btn-wrap">
+                            <a href="https://accounts.meetdapper.com/wallet/flow" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="40">Open Dapper Flow Wallet</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -684,7 +687,7 @@
         <div class="timeline">
             <div class="timeline-heading">
                 <span class="no">1</span>
-                <h2>TRANSFORM <span class="highlight-txt">DAPPER CREDIT</span> TO <span class="highlight-txt">FLOW</span></h2>
+                <h2>ADD <span class="highlight-txt">DAPPER CREDIT</span> FUNDS</h2>
                 <div class="btn-wrap">
                     <a href="https://accounts.meetdapper.com/home" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="38">Dapper Wallet</a>
                 </div>
@@ -710,6 +713,13 @@
                         <p>In case you don't have sufficient USD Dapper Credits, you can add funds easily by paying with Credit Card or by bank wire.</p>
                         <p>Then click <b>Add Funds</b></p>
                     </div>
+                </div>
+            </div>
+            <div class="timeline-heading">
+                <span class="no">1</span>
+                <h2>WITHDRAW <span class="highlight-txt">USDC TOKEN</span> TO <span class="highlight-txt">BLOCTO WALLET</span></h2>
+                <div class="btn-wrap">
+                    <a href="https://accounts.meetdapper.com/home" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="38">Dapper Wallet</a>
                 </div>
             </div>
             <div class="media-a alt sm">
@@ -760,6 +770,13 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="timeline-heading">
+                <span class="no">2</span>
+                <h2>Swap <span class="highlight-txt">USDC</span> TO <span class="highlight-txt">FLOW</span></h2>
+            </div>
+
             <div class="media-a alt sm">
                 <div class="img">
                     <img src="/images/get-started-dapper/15-Swap-USDC-FLOW.png" alt="">
