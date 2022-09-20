@@ -113,7 +113,7 @@
 
             <div class="timeline-heading">
                 <span class="no">2</span>
-                <h2>Use blocto to teleport <span class="highlight-txt">WFLOW</span> TO <span class="highlight-txt">flow</span></h2>
+                <h2>Use Blocto to teleport <span class="highlight-txt">WFLOW</span> TO <span class="highlight-txt">flow</span></h2>
                 <div class="btn-wrap">
                     <a href="https://swap.blocto.app/#/teleport?inputCurrency=0x5c147e74D63B1D31AA3Fd78Eb229B65161983B2b&outputCurrency=0x1654653399040a61" target="_blank" class="btn-o"><img src="/images/icon-bloctoswap.svg" alt="" width="29">Open BloctoSwap Teleport</a>
                 </div>
@@ -276,7 +276,7 @@
                 </div>
                 <div class="desc">
                     <div class="inner">
-                        <h3>Add Blocto address to the withdrawal list</h3>
+                        <h3>Add Dapper address to the withdrawal list</h3>
                         <p>Click <b>Add new withdrawl address</b> and then copy the address from the previous step along with a name and save it.
                         </p>
                     </div>
@@ -289,7 +289,7 @@
                 <div class="desc">
                     <div class="inner">
                         <h3>Choose amount to withdraw</h3>
-                        <p>Enter the amount of FLOW that you would like to withdraw from Kraken to Blocto and click the <b>Withdraw FLOW</b> button.</p>
+                        <p>Enter the amount of FLOW that you would like to withdraw from Kraken to Dapper and click the <b>Withdraw FLOW</b> button.</p>
                     </div>
                 </div>
             </div>
@@ -315,18 +315,6 @@
                         <div class="btn-wrap">
                             <a href="https://accounts.meetdapper.com/wallet/flow" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="40">Open Dapper Flow Wallet</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-a alt sm">
-                <div class="img">
-                    <img src="/images/a-img32.png" alt="">
-                </div>
-                <div class="desc">
-                    <div class="inner">
-                        <h3>Managing your FLOW with Flow Port</h3>
-                        <p>To manage your FLOW head on over to <a href="https://port.onflow.org/" target="_blank">Flow Port</a> and login with your Blocto email address.</p>
-                        <p>Now that you have your wallet ready you can also use it with many other <a href="https://www.flowverse.co/projects" target="_blank">projects</a> built on <a href="https://flow.com" target="_blank">Flow</a>.</p>
                     </div>
                 </div>
             </div>
@@ -423,7 +411,7 @@
                     <div class="inner">
                         <h3>Open the Withdraw section</h3>
                         <p>Click <b>Transfer</b>, then <b>Withdraw</b> and finally <b>External wallet</b> in the main navigation.</p>
-                        <p>At this point click the <b>+</b> on the top right and choose <b>Wallet address</b> to enter the Blocto address from the previous step and click <b>Continue</b>.</p>
+                        <p>At this point click the <b>+</b> on the top right and choose <b>Wallet address</b> to enter the Dapper address from the previous step and click <b>Continue</b>.</p>
                     </div>
                 </div>
             </div>
@@ -449,18 +437,6 @@
                         <div class="btn-wrap">
                             <a href="https://accounts.meetdapper.com/wallet/flow" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="40">Open Dapper Flow Wallet</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-a alt sm">
-                <div class="img">
-                    <img src="/images/a-img32.png" alt="">
-                </div>
-                <div class="desc">
-                    <div class="inner">
-                        <h3>Managing your FLOW with Flow Port</h3>
-                        <p>To manage your FLOW head on over to <a href="https://port.onflow.org/" target="_blank">Flow Port</a> and login with your Blocto email address.</p>
-                        <p>Now that you have your wallet ready you can also use it with many other <a href="https://www.flowverse.co/projects" target="_blank">projects</a> built on <a href="https://flow.com" target="_blank">Flow</a>.</p>
                     </div>
                 </div>
             </div>
@@ -549,7 +525,7 @@
                 <div class="desc">
                     <div class="inner">
                         <h3>Enter details to withdraw</h3>
-                        <p>Paste the <b>Blocto address</b> from the previous step, select the FLOW network, and enter the amount to complete the withdraw process.</p>
+                        <p>Paste the <b>Dapper address</b> from the previous step, select the FLOW network, and enter the amount to complete the withdraw process.</p>
                     </div>
                 </div>
             </div>
@@ -564,18 +540,6 @@
                         <div class="btn-wrap">
                             <a href="https://accounts.meetdapper.com/wallet/flow" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="40">Open Dapper Flow Wallet</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-a alt sm">
-                <div class="img">
-                    <img src="/images/a-img32.png" alt="">
-                </div>
-                <div class="desc">
-                    <div class="inner">
-                        <h3>Managing your FLOW with Flow Port</h3>
-                        <p>To manage your FLOW head on over to <a href="https://port.onflow.org/" target="_blank">Flow Port</a> and login with your Blocto email address.</p>
-                        <p>Now that you have your wallet ready you can also use it with many other <a href="https://www.flowverse.co/projects" target="_blank">projects</a> built on <a href="https://flow.com" target="_blank">Flow</a>.</p>
                     </div>
                 </div>
             </div>
@@ -622,7 +586,7 @@
 
             <div class="timeline-heading">
                 <span class="no">2</span>
-                <h2>Withdraw <span class="highlight-txt">FLOW</span> to the <span class="highlight-txt">Blocto wallet</span></h2>
+                <h2>Withdraw <span class="highlight-txt">FLOW</span> to the <span class="highlight-txt">Dapper wallet</span></h2>
             </div>
             <div class="media-a alt sm">
                 <div class="img">
@@ -646,7 +610,7 @@
                 <div class="desc">
                     <div class="inner">
                         <h3>Enter details to withdraw</h3>
-                        <p>Paste the <b>Blocto address</b> from the previous step and enter the amount to complete the withdraw process.</p>
+                        <p>Paste the <b>Dapper address</b> from the previous step and enter the amount to complete the withdraw process.</p>
                     </div>
                 </div>
             </div>
@@ -662,18 +626,6 @@
                         <div class="btn-wrap">
                             <a href="https://accounts.meetdapper.com/wallet/flow" target="_blank" class="btn-o"><img src="/images/icon-dapper.png" alt="" width="40">Open Dapper Flow Wallet</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="media-a alt sm">
-                <div class="img">
-                    <img src="/images/a-img32.png" alt="">
-                </div>
-                <div class="desc">
-                    <div class="inner">
-                        <h3>Managing your FLOW with Flow Port</h3>
-                        <p>To manage your FLOW head on over to <a href="https://port.onflow.org/" target="_blank">Flow Port</a> and login with your Blocto email address.</p>
-                        <p>Now that you have your wallet ready you can also use it with many other <a href="https://www.flowverse.co/projects" target="_blank">projects</a> built on <a href="https://flow.com" target="_blank">Flow</a>.</p>
                     </div>
                 </div>
             </div>
